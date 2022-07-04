@@ -101,3 +101,8 @@ h4 {
   box-shadow: var(--shadow);
   cursor: pointer;
 } /*styling for labels*/
+
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+} /*radio and checkbox checks taking away*/
