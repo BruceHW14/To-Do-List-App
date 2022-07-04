@@ -12,3 +12,9 @@
   --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 } /*variables to be used throughout css styling*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat' , sans-serif;
+}
