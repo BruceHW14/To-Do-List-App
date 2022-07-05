@@ -202,3 +202,7 @@ input:checked ~ .bubble::after {
   font-size: 1.125rem;
 } /*todo content colored*/
 
+.todo-item .actions {
+  display: flex;
+  align-items: center;
+}
