@@ -187,3 +187,8 @@ input:checked ~ .bubble::after {
   margin-bottom: 1rem;
 } /*to do list edited with padding and margin bottom*/
 
+.todo-item label {
+  display: block;
+  margin-right: 1rem;
+  cursor: pointer;
+}
