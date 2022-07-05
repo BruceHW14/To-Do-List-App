@@ -177,3 +177,13 @@ input:checked ~ .bubble::after {
   margin: 1rem 0;
 } /*some spacing around todo-list*/
 
+.todo-list .todo-item {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+} /*to do list edited with padding and margin bottom*/
+
