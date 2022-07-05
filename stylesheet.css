@@ -166,3 +166,9 @@ input:checked ~ .bubble::after {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
+
+.create-todo input[type="submit"]:hover {
+  opacity: 0.75;
+}
+
+/*above code styled the add todo button*/
