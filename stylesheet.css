@@ -191,4 +191,14 @@ input:checked ~ .bubble::after {
   display: block;
   margin-right: 1rem;
   cursor: pointer;
+} /*to do item label styled to indicate something can happen*/
+
+.todo-item .todo-content {
+  flex: 1 1 0%;
 }
+
+.todo-item .todo-content input {
+  color: var(--dark);
+  font-size: 1.125rem;
+} /*todo content colored*/
+
