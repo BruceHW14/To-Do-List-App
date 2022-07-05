@@ -172,3 +172,8 @@ input:checked ~ .bubble::after {
 }
 
 /*above code styled the add todo button*/
+
+.todo-list .list {
+  margin: 1rem 0;
+} /*some spacing around todo-list*/
+
