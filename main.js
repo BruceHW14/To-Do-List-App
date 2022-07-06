@@ -18,12 +18,14 @@ window.addEventListener('load', () => {
       content: e.target.elements.content.value,
       category: e.target.elements.category.value,
       done: false,
-      createdAt: new Date().getTime()
+      createdAt: new Date().getTime() /*to retrieve value from content and category*/
     }
 
     todos.push(todo);
 
     localStorage.setItem('todos', JSON.stringify(todos)); /*array stringified to store in local storage*/
+
+    e.target.reset(); /*reset for input field*/
 
   })
 })
