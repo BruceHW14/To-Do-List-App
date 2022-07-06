@@ -23,5 +23,7 @@ window.addEventListener('load', () => {
 
     todos.push(todo);
 
+    localStorage.setItem('todos', JSON.stringify(todos)); /*array stringified to store in local storage*/
+
   })
 })
