@@ -8,7 +8,20 @@ window.addEventListener('load', () => {
   nameInput.value = username;
 
   nameInput.addEventListener('change', e => {
-    localStorage.setItem('username', e.target.value);
+    localStorage.setItem('username', e.target.value); /*localStorage for username*/
   })
 
+  newTodoForm.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const todo = {
+      content: e.target.elements.content.value,
+      category: e.target.elements.category.value,
+      done: false,
+      createdAt: new Date().getTime()
+    }
+
+    todos.push(todo);
+
+  })
 })
