@@ -42,7 +42,7 @@ function DisplayTodos(){
 
   todos.forEach(todo => {
     const todoItem = document.createElement('div');
-    todoItem.classList.add('todo-item');
+    todoItem.classList.add('todo-item')
 
     const label = document.createElement('label');
     const input = document.createElement('input');
@@ -57,9 +57,9 @@ function DisplayTodos(){
     span.classList.add('bubble');
 
     if (todo.category == 'personal') {
-      span.classList.add('personal');
+       span.classList.add('personal');
     } else{
-      span.classList.add('business');
+       span.classList.add('business');
     }
 
     content.classList.add('todo-content');
@@ -67,10 +67,10 @@ function DisplayTodos(){
     edit.classList.add('edit');
     deleteButton.classList.add('delete');
 
-    content.innerHTML = `<input type="text" value="${todo-content}"
-    readonly>`;
+    content.innerHTML = `<input type="text" value="${!todo-content}" 
+    readonly>`;                                                      //content keeps displaying as NaN, struggling to fix
     edit.innerHTML = 'Edit';
-    deleteButton.innerHTML = "Delete";
+    deleteButton.innerHTML = 'Delete';
 
     label.appendChild(input);
     label.appendChild(span);
@@ -82,7 +82,7 @@ function DisplayTodos(){
 
     todoList.appendChild(todoItem);
 
-    if (todo.done){
+    if (todo.done) {
       todoItem.classList.add('done');
     }
 
@@ -96,8 +96,12 @@ function DisplayTodos(){
         todoItem.classList.remove('done');
       }
 
-      DisplayTodos(); //to do functions to display all todos
+      DisplayTodos(); //to do functions to re-display all todos
     })
+
+    function removeNaN(arr) {
+      return arr.filter(item => !isNaN(item));
+    }                                           //attempt to remove NaN
 
     edit.addEventListener('click', e => {
       const input = content.querySelector('input');
@@ -109,12 +113,12 @@ function DisplayTodos(){
         localStorage.setItem('todos', JSON.stringify(todos));
         DisplayTodos();
       })
-    })
+    }) //edit button for to-do list
 
     deleteButton.addEventListener('click', e => {
       todos = todos.filter(t => t != todo);
       localStorage.setItem('todos', JSON.stringify(todos));
       DisplayTodos();
-    })
+    }) //delete button for to-do list
   })
 }
