@@ -3,7 +3,7 @@
   --business: #FF69B4;
   --personal: var(--primary);
   --light: #EEE;
-  --grey: #888;
+  --navy: #191970;
   --dark: #313154;
   --danger: red;
 
@@ -28,6 +28,10 @@ input:not([type="radio"]):not([type="checkbox"]), button{
   cursor: initial;
 } /*resets done on form and padding and margin has been removed*/
 
+.backbody {
+  background-image: url("images/Image1..jpeg")
+}
+
 body {
   background: var(--light);
   color: var(--dark);
@@ -48,7 +52,7 @@ h3 {
 } /*styling for h3 tags*/
 
 h4 {
-  color: var(--grey);
+  color: var(--navy);
   font-size: 0.875rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -231,5 +235,5 @@ input:checked ~ .bubble::after {
 
 .todo-item.done .todo-content input{
   text-decoration: line-through;
-  color: var(--grey);
+  color: var(--navy);
 }

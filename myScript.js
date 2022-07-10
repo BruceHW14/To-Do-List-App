@@ -67,7 +67,7 @@ function DisplayTodos(){
     edit.classList.add('edit');
     deleteButton.classList.add('delete');
 
-    content.innerHTML = `<input type="text" value="${!todo-content}" 
+    content.innerHTML = `<input type="text" value="${todo-content}" 
     readonly>`;                                                      //content keeps displaying as NaN, struggling to fix
     edit.innerHTML = 'Edit';
     deleteButton.innerHTML = 'Delete';
