@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
   const nameInput  = document.querySelector('#name');
   const newTodoForm = document.querySelector('#new-todo-form');
 
-  const username = document.getItem('username') || '';
+  const username = localStorage.getItem('username') || '';
 
   nameInput.value = username;
 
