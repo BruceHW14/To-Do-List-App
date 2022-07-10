@@ -30,7 +30,7 @@ input:not([type="radio"]):not([type="checkbox"]), button{
 
 .backbody {
   background-image: url("images/Image1..jpeg")
-}
+} /*background image*/
 
 body {
   background: var(--light);
